@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        padding-top: 70px; /* Adjusting for navbar height */
+        font-family: Arial, sans-serif;
+        background-color: rgba(110, 160, 114, 0.825);
+      }
+
+      #content {
+        width: 75%;
+        margin: 20px auto;
+        background-color: rgb(255, 255, 255,0.625);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+        margin-bottom: 20px;
+      }
+
+      form input[type="text"],
+      form textarea {
+        width: calc(100% - 20px); /* Adjusting for padding */
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      form textarea {
+        height: 100px;
+      }
+
+      form input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .contact-section {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .contact-section h2 {
+        margin-bottom: 10px;
+      }
+
+      .contact-section p {
+        margin: 5px 0;
+      }
+
+      .contact-section p:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          >
+          <!-- <img
+            src="/docs/5.0/assets/brand/bootstrap-logo.svg"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          /> -->
+          <b style="font-size: 25px">BMI-CALCULATOR</b></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNavAltMarkup"
+          style="justify-content: center"
+        >
+          <div class="navbar-nav" style="font-size: larger">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="/HOME/index.html"
+              ><b>Home</b></a
+            >
+            <a class="nav-link" href="/Health/index.html"><b>Health Info</b></a>
+            <a class="nav-link active" href="/About/index.html"><b>About</b></a>
+          </div>
+        </div>
+        <div
+          class="d-flex"
+          id="navbarNavAltMarkup"
+          style="justify-content: space-between; width: 175px"
+        >
+          <!-- <button
+            class="btn btn-outline-success login"
+            type="submit"
+            onclick="location.href='/LOGIN P/login.html'"
+          >
+            <b>SIGN-IN</b>
+          </button> -->
+        </div>
+      </div>
+    </nav>
+
+    <div id="content">
+      <h1>About Us</h1>
+      <p>
+        Welcome to our BMI Calculator website! We're dedicated to helping individuals like you make informed decisions about your health and well-being. Our team is comprised of health enthusiasts, fitness coaches, and nutritionists who are passionate about promoting healthy lifestyles.
+        At BMI Calculator, our mission is simple: to empower you to take control of your health. We believe that understanding your body mass index (BMI) is a crucial step towards achieving optimal health and fitness. By providing easy-to-use tools like our BMI Calculator and offering valuable insights into nutrition and fitness, we aim to support you in your journey towards a healthier, happier life.
+      </p>
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Nam id justo non felis luctus congue ut eu
+        quam. Sed nec ante sed nulla vehicula lacinia. Fusce nec elit vel dolor
+        tempor facilisis. Morbi semper risus a felis dictum, ac feugiat elit
+        varius. Nam nec sodales odio. Praesent quis suscipit mauris. Aenean ac
+        consequat purus. Pellentesque habitant morbi tristique senectus et netus
+        et malesuada fames ac turpis egestas. Integer pretium tempus fermentum.
+        Nulla venenatis urna vitae urna fermentum, non ultricies purus suscipit.
+        Nullam dapibus vehicula velit, in placerat magna luctus at.
+      </p>
+
+      <h2>Feedback Form</h2>
+      <form action="#" method="post">
+        <input ID="name" type="text"  placeholder="Your Name" required /><br />
+        <input
+          type="text"
+          name="email" 
+          id="email"
+          placeholder="Your Email"
+          required
+        /><br />
+        <textarea name="message" placeholder="Your Message" required></textarea
+        ><br />
+        <button type="button" onclick="redirectToIndex()">Submit</button>
+      </form>
+
+      <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+          Email: <a href="mailto:contact@example.com">contact@example.com</a>
+        </p>
+        <p>Phone: +1 123-456-7890</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
