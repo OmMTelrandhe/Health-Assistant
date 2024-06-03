@@ -1,0 +1,66 @@
+/* set the background image of the body */
+body {
+    background-image: url('/image/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Styles for the big container */
+.big-container {
+    width: 75vw;
+    /* 75% of the viewport width */
+    margin: 100px auto;
+    /* Center the container */
+    display: block;
+    /* Default display, can be omitted since block is default */
+}
+
+/* Styles for each child */
+.child {
+    width: calc(100% - 20px);
+    /* Make each child fill the container with 20px margin on both sides */
+    height: 200px;
+    /* Height as per your requirement */
+    background-color: lightblue;
+    /* Background color for visual distinction */
+    border: 1px solid #ccc;
+    /* Border for visual distinction */
+    margin: 10px;
+    /* Space around the child elements */
+    padding: 20px;
+    /* Padding inside each child */
+    /* display: flex; */
+    justify-content: center;
+    /* Horizontally center content */
+    align-items: center;
+    /* Vertically center content */
+    border-radius: 16px;
+}
+
+/* Removes margin from the last child to avoid extra space at the bottom */
+.child:last-child {
+    margin-bottom: 0;
+}
+
+.c1{
+    background-color: rgb(209, 172, 40,0.865);
+    color: white;
+    font-size: 14px;
+}
+
+.c2{
+    background-color: rgb(65, 187, 21, 0.865);
+    color: white;
+    font-size: 14px;
+}
+.c3{
+    background-color: rgb(219, 68, 68, 0.865);
+    color: white;
+    font-size: 14px;
+}
+.c4{
+    background-color: rgba(163, 4, 4, 0.865);
+    color: white;
+    font-size: 14px;
+}
