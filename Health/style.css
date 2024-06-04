@@ -1,6 +1,6 @@
 /* set the background image of the body */
 body {
-    background-image: url('/image/img1.jpg');
+    background-image: url('/Health-Assistant/image/img1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
